@@ -1,0 +1,148 @@
+#liuyan{
+	margin: auto;
+	width: 88%;
+	margin-top: 30px;
+}
+#liuyan_content{
+	height: 650px;
+	background: 
+		linear-gradient(to left top, transparent 50%, rgba(74,121,152,0.30) 0) no-repeat 100% 100% / 2em 2em,
+		linear-gradient(-45deg, transparent 1.5em, rgba(27,132,176,0.30) 0);
+	padding: 10px 0 0 40px;
+	text-indent: 2%;
+	font-size: 17px;
+}
+#liuyan_content label{
+	padding-left: 1em;
+	border-left: 5px solid rgba(0,98,249,1.00);
+}
+#liuyan_title{
+	height: 50px;
+	width: 40%;
+	line-height: 50px;
+	margin-bottom: 20px;
+	text-align: center;
+	background:linear-gradient(-135deg, #f00 15px, rgba(96,188,239,1.00) 0);
+}
+#liuyan_title p{
+	width: 100%;
+	font-size: 20px;
+	font-weight: bold;
+	color: #0E348F;
+/*	border-left: 5px solid rgba(4,45,255,1.00)*/
+}
+#liuyan_biaoti{
+	height: 50px;
+	line-height: 50px;
+	margin-bottom: 10px;
+}
+#liuyan_biaoti input{
+	height: 40px;
+	width: 74.6%;
+	font-size: 18px;
+	text-indent: 5px;
+}
+#liuyan_msg{
+	height: 240px;
+	text-indent: 5em;
+	padding: 10px 0 10px 0;
+	margin-left: 19px;
+	margin-top: -30px;
+}
+#liuyan_msg textarea{
+	resize: none;
+	height: 200px;
+	width: 77%;
+	font-size: 16.5px;
+	padding: 5px;
+}
+#liuyan_user{
+	text-indent: 0.7em;
+	height: 100px;
+	line-height: 50px;
+}
+#liuyan_user input{
+	height: 40px;
+	width: 74.6%;
+	font-size: 16.5px;
+	text-indent: 5px;
+}
+#liuyan_time{
+	text-indent: 0.7em;
+	height: 50px;
+	line-height: 50px;
+}
+#liuyan_time input{
+	height: 40px;
+	width: 74.6%;
+	font-size: 16.5px;
+	text-indent: 5px;
+}
+#liuyan_button{
+	height: 50px;
+	line-height: 50px;
+	margin-top: 20px;
+	text-align: center;
+	margin-right: 10%;
+}
+#liuyan_button input{
+	height: 40px;
+	width: 20%;
+	background-image: linear-gradient(#ADDCEF,rgba(114,142,104,1.00));
+	color: #FFFFFF;
+	font-size: 16px;
+	margin-right: 2%;
+}
+#liuyan_button input:hover{
+	background-image: none;
+	background-color: rgba(7,55,201,1.00);
+}
+.null1{
+	width: 50px;
+}
+
+@media screen and (max-width: 768px) and (min-width: 0px){
+	.null1{
+		height: 20px;
+	}
+	#liuyan_content{
+		padding: 10px 0 0 10px;
+	}
+	.null{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 680px) and (min-width: 510px){
+	#liuyan{
+		width: 99%;
+	}
+}
+
+@media screen and (max-width: 510px) and (min-width: 0px){
+	#liuyan{
+		width: 99%;
+	}
+	#liuyan_content{
+		font-size: 15px;
+		padding: 10px 0 0 5px;
+	}
+	.null{
+		display: none;
+	}
+	#liuyan_content input{
+		height: 30px;
+	}
+	#liuyan_biaoti input, #liuyan_user input, #liuyan_time input{
+		width: 70%;
+	}
+	#liuyan_msg textarea{
+		width: 72%;
+	}
+	
+}
+
+
+
+
+

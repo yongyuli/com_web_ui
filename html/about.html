@@ -1,0 +1,325 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/public.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta name="viewport" content="width=device-width, user-scalable=no" charset="utf-8"/>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>关于网站-计算机工程学院网络工程专业网站</title>
+<link rel="stylesheet" type="text/css" href="../css/author.css"/>
+<script type="text/javascript">
+	//在网页加载后运行
+	window.onload = function(){
+		public();
+		mrzd();
+		user();
+
+		//在浏览器大小发生变化后运行
+		window.onresize = function(){
+			public();
+			user();
+
+			//窗口滚动时运行
+			window.onscroll = function(){
+				public();
+				user();
+			}
+		}
+	}
+</script>
+	
+<!-- InstanceEndEditable -->
+<link rel="stylesheet" type="text/css" href="../css/public.css"/>
+<script type="text/javascript" src="../js/js.js"></script>
+<!-- InstanceBeginEditable name="head" -->
+ 
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+
+	<div class="public">
+		<div id="top">
+			<!--头部logo处开始-->
+			<div id="main-top">
+				<a href="index.html"><div id="logo"></div></a>
+				<!--小菜单-->
+				<div id="menu"></div>
+				
+				
+				<div id="minband">
+					<ul>
+						<li>【<a href="http://www.gliet.edu.cn" target="_blank">桂林本部</a>】</li>
+						<li>【<a href="https://www.guet.edu.cn/gdbh" target="_blank">北海校区</a>】</li>
+						<li>【<a href="#" target="_blank">帮助中心</a>】</li>
+					</ul>
+					<form action="#" class="search">
+						<input type="text" class="" placeholder="请输入您要搜索的内容">
+						<button><i>搜索</i></button>
+					</form>
+				</div>
+			</div>
+			
+			<!--导航条开始-->
+			<div id="nav">
+				<ul>
+					<li><a href="index.html">网站首页</a></li>
+					<li><a href="majors.html">专业介绍</a>
+						<ul>
+							<li><a href="majors.html">专业简介</a></li>
+							<li><a href="pymb.html">培养目标</a></li>
+							<li><a href="kcks.html">课程开设</a></li>
+						</ul>
+					</li>
+					<li><a href="zydt.html">专业动态</a>
+						<ul>
+							<li><a href="zydt.html">专业动态</a></li>
+							<li><a href="classfly.html">新闻快讯</a></li>
+							<li><a href="hydt.html">行业动态</a></li>
+						</ul>
+					</li>
+					<li><a href="xxyd.html">学习园地</a>
+					</li>
+					<li><a href="lhxf.html">良好学风</a>
+					</li>
+					<li><a href="liuyan.html">我要留言</a></li>
+					<li><a href="about.html">关于网站</a></li>
+					
+				</ul>
+				<div id="public_user"><a href="login.html">会员登录</a>&nbsp;|
+					<a href="register.html">会员注册</a>
+				</div>
+			</div>
+			<!--导航条结束-->
+	
+		</div>
+		
+		<!--中段部分-->
+		<div id="main">
+			<!--中段-左侧-->
+			<div id="left">
+				<div id="left_xf">
+					<a href="javascript:void();"></a>
+				</div>
+			</div>
+			<!--中间部分-->
+			<div id="center">
+
+				<!-- InstanceBeginEditable name="center" -->
+				<!--<div id="about_video">
+					<video width="450px" height="300px" controls>
+					  <source src="../about.mp4" type="video/mp4">
+					您的浏览器不支持 video 标签。
+					</video>
+				</div>-->
+				<div id="about">
+					<div id="author">
+						<h1 id="bt_1">作者</h1>
+						<div id="nr_1">
+							<p>桂电 李泳玉</p>
+						</div>
+					</div>
+					<div id="describe">
+						<ul>
+							<li>
+								<h1 id="bt_2">公共部分介绍</h1>
+								<div id="nr_2">
+									<lable><b>总体介绍</b></lable>
+									<p>① 网站的布局为上中下的响应式布局。可根据客户端以不同的样式显示不同的效果。适配的浏览器宽度分别为：0px-510px，510px-680px，680px-768px，768px-1000px以及1000px以上等5个宽度值。</p>
+									<p>② 所有的页面盒子以百分比方式呈现，以便后续自适应。</p>
+									<p>③ 版权位置的终止年份运用js自动获取当前年份。（详见js.js文件）</p>
+									<p>④ 所有的元素大小包括边框、内边距。</p>
+									<p>⑤ 在制作过程中，新建了多个模板，并在模板的基础上创建相应页面，以便修改数据。</p>
+									
+									<lable><b>1、logo及侧边小导航</b></lable>
+									<p>由最顶部ID为top的盒子容纳logo、小导航、搜索、移动端菜单按钮等元素。logo占85px，在PC端右侧占宽度35%，在移动端时，右侧占10%，根据屏幕宽度进行放大缩小。</p>
+								
+									<lable><b>2、导航栏</b></lable>
+									<p>
+										导航栏采用了flex弹性盒子，在PC端默认以横向展示，分别占宽度为10%；
+										在移动端以纵向靠右展示，默认是隐藏状态，高度为一级菜单个数乘以40像素，以js实现。点击顶部的小菜单按钮时弹出导航栏，点击导航栏以外位置时隐藏导航栏，当一级菜单下有二级菜单时，一级菜单为空链接，点击时不会隐藏导航栏而呼出二级菜单。如果有二级菜单，则显示三角指示符号，点击之后三角指示符号则切换为反方向式（详见index.js文件）
+									</p>
+									<lable><b>3、登陆|注册入口</b></lable>
+									<p>
+										默认状态在导航栏最右侧显示登陆|注册入口，用户登录成功之后显示为用户中心|退出按钮。(在js.js中实现)
+									</p>
+									
+									<lable><b>4、左边悬浮窗</b></lable>
+									<p>
+										悬浮窗用于显示广告等信息，当窗口滚动时该悬浮窗会以滚动了的像素加200像素来确保悬浮窗口保持在自顶而下的200像素位置。（详见index.js文件）
+									</p>
+									
+									<lable><b>5、返回顶部</b></lable>
+									<p>运用js中的scroll(0,0)滚动至网页顶部。</p>
+									<lable><b>6、底部</b></lable>
+									<p>底部展示版权信息以及前后台切换的入口链接。在移动端中比较PC端多了底部菜单（首页、学习、留言和我的），使用了固定定位，让其始终在页面的底部，在移动端中原底部信息距离底部10像素以便展现底部菜单。</p>
+									
+									<lable><b>(由此产生public.dwt模板文件)</b></lable>
+									
+								</div>
+							</li>
+							<li>
+								<h1 id="bt_3" onClick="zd(this,nr_3)">首页介绍</h1>
+								<div id="nr_3"><br />（首页使用的js代码详见index.js文件，使用的模板为public.dwt）<br />
+									<lable><b>1、轮播图</b></lable>
+									<p>轮播图每隔3秒切换，切换时对应的数字编号(li标志)也会跟着更换背景色。可点击两侧的按钮控制上一张、下一张；也可以点击图片下方的编号导航进行切换，鼠标放在编号上不点击也可以切换，当鼠标置于编号上方时编号背景色改变。每张幻灯片对应一个目标网页。当鼠标置于图片上方时呈现阴影效果。</p>
+									<lable><b>2、底部滚动图</b></lable>
+									<p>底部滚动图以0.03秒的速度往左滚动，当鼠标置于该div盒子上方时停止滚动。当点击上一项时ul的总宽度加回160px，以显示上一组信息；当点击下一项时ul的总宽度减去160px，以显示下一组信息。当鼠标置于任何一张图片上时图片突出显示。</p>
+									<lable><b>3、专业动态轮播图</b></lable>
+									<p>轮播图每隔3秒切换，切换时对应的数字编号(li标志)也会跟着更换背景色。鼠标放在编号上不点击也可以切换，当鼠标置于编号上方时编号背景色改变。每张幻灯片对应一个目标网页。当鼠标置于图片上方时呈现阴影效果。在轮播图底部显示部分摘要。当在移动端浏览时，为了确保浏览体验，该部分隐藏。</p>
+									<lable><b>4、内容栏目</b></lable>
+									<p>首页共有4个栏目：专业动态、新闻快讯、良好学风、学习园地和行业动态等。使用flex弹性盒子布局，根据浏览器宽度自适应。</p>
+									<p>在移动端访问时，除专业动态之外的栏目内容会先折叠起来，点击栏目名称位置之后显示，再点击则隐藏折叠。每个栏目100%显示。</p>
+									<p>应用js给条目增加背景颜色，达到美观的目的。</p>
+									<p>点击各栏目的更多按钮，可进入相关专区页面。</p>
+									
+								</div>
+							</li>
+							<li>
+								<h1 id="bt_4" onClick="zd(this,nr_4)">列表页介绍</h1>
+								<div id="nr_4">
+									<br /><p>（使用的js代码详见list.js文件，使用的模板为list.dwt，此模板为public.dwt的嵌套模板，当public模板有更新，此嵌套模板会跟随更新）</p><br />
+									<p>内容页运用了flex弹性盒子，在PC端中，盒子将页面主内容分为左侧菜单右侧内容，左侧菜单占21%。右侧占76%；在移动端中菜单及原右侧均占100%。</p><br />
+									<p>PC端中，在右侧，以无序列表展示内容列表。移动端则在下方展示内容列表。</p>
+									
+								</div>
+							</li>
+							<li>
+								<h1 id="bt_5" onClick="zd(this,nr_5)">内容页介绍</h1>
+								<div id="nr_5">
+									<br /><p>（使用的js代码详见none.js文件，使用的模板为content.dwt，此模板为public.dwt的嵌套模板，当public模板有更新，此嵌套模板会跟随更新）</p><br />
+									<p>在上中下模板文件的中间部分展示内容。</p>
+									
+								</div>
+							</li>
+							<li>
+								<h1 id="bt_6" onClick="zd(this,nr_6)">登陆介绍</h1>
+								<div id="nr_6">
+									<p>使用js模拟登陆。输入登陆信息(用户名：user、密码：pwd)，验证通过、登陆成功之后跳转至首页，并将用户名存入session中，方便后续使用用户名。(在user.js中实现)</p>
+								</div>
+							</li>
+							<li>
+								<h1 id="bt_7" onClick="zd(this,nr_7)">注册介绍</h1>
+								<div id="nr_7">
+									<p>输入信息提交到服务器之前，通过js脚本验证数据，通过则注册成功。(在user.js中实现)</p>
+								</div>
+							</li>
+							<li>
+								<h1 id="bt_8" onClick="zd(this,nr_8)">搜索介绍</h1>
+								<div id="nr_8">
+									<p>搜索框运用@keyframes动画做出自顶而下的动画效果，使用animation属性将动画与搜索框绑定。且停留在效果的最后一帧。在连接数据库使用时可搜索数据。</p>
+								</div>
+							</li>
+							<li>
+								<h1 id="bt_9" onClick="zd(this,nr_9)">留言介绍</h1>
+								<div id="nr_9">
+									<p>这是一个form表单，填写时间的的输入框的类型为date。内容框是textarea文本域，取消了改变大小的功能。电话输入框中限制了最多11位。“提交”按钮可将表单传达至使用区域，“重置”按钮可将输入的信息清空。界面在PC端或移动端自适应。</p>
+								</div>
+							</li>
+							<li>
+								<h1 id="bt_10" onClick="zd(this,nr_10)">会员中心</h1>
+								<div id="nr_10">
+									<p>会员中心展示用户的信息，包括账号名、性别及所在地等信息，有更改密码入口。当用户未登录时直接进入用户中心页面，则跳转至登录页面。</p>
+								</div>
+							</li>
+							<li>
+								<h1 id="bt_11" onClick="zd(this,nr_11)">管理中心</h1>
+								<div id="nr_11">
+									<p>管理中心可以展示数据库中的数据进行修改。网站底部的管理中心和回到前台按钮按页面切换超链接。</p>
+								</div>
+							</li>
+							
+							<li>
+								<h1 id="bt_12" onClick="zd(this,nr_12)">网站文件介绍</h1>
+								<div id="nr_12">
+									<p><i>1.0、html文件夹：&nbsp;&nbsp;网站网页源代码目录</i></p>
+									<p>1.1、html/index.html：&nbsp;&nbsp;网站首页</p>
+									<p>1.2、html/login.html：&nbsp;&nbsp;登录页面</p>
+									<p>1.3、html/register.html：&nbsp;&nbsp;注册页面</p>
+									<p>1.4、html/majors.html：&nbsp;&nbsp;专业简介</p>
+									<p>1.5、html/pymb.html：&nbsp;&nbsp;培养目标描述</p>
+									<p>1.6、html/kcks.html：&nbsp;&nbsp;专业开设的课程描述</p>
+									<p>1.7、html/zydt.html：&nbsp;&nbsp;专业动态</p>
+									<p>1.8、html/classfly.html：&nbsp;&nbsp;新闻快讯</p>
+									<p>1.9、html/hydt.html：&nbsp;&nbsp;行业动态</p>
+									<p>1.10、html/xxyd.html：&nbsp;&nbsp;学习园地</p>
+									<p>1.11、html/lhxf.html：&nbsp;&nbsp;良好学风</p>
+									<p>1.12、html/liuyan.html：&nbsp;&nbsp;留言板</p>
+									<p>1.13、html/about.html：&nbsp;&nbsp;关于网站</p>
+									<p>1.14、html/detail-*.html：&nbsp;&nbsp;详情页</p>
+									<p>1.15、html/xxyd_img-*.html：&nbsp;&nbsp;学习园地部分详情页</p>
+									<p>1.16、html/user.html：&nbsp;&nbsp;用户中心</p>
+									<p style="border-bottom: 1px solid rgba(110,106,106,0.60)">1.17、html/admin.html：&nbsp;&nbsp;管理中心</p>
+									<p style="border-bottom: 1px solid rgba(110,106,106,0.60)"><i>2.0、images文件夹：&nbsp;&nbsp;图片资源目录</i></p>
+									<p><i>3.0、js文件夹：&nbsp;&nbsp;js脚本目录</i></p>
+									<p>3.1、js/js.js：&nbsp;&nbsp;公共(上中下布局)js脚本</p>
+									<p>3.2、js/index.js：&nbsp;&nbsp;首页js脚本</p>
+									<p>3.3、js/list.js：&nbsp;&nbsp;列表页js脚本</p>
+									<p>3.4、js/none.js：&nbsp;&nbsp;单纯引入公共js文件的js脚本</p>
+									<p style="border-bottom: 1px solid rgba(110,106,106,0.60)">3.5、js/user.js：&nbsp;&nbsp;登陆和注册的js脚本</p>
+									<p><i>4.0、Templates文件夹：&nbsp;&nbsp;模板文件目录</i></p>
+									<p>4.1、Templates/public.dwt：&nbsp;&nbsp;公共(上中下布局)模板</p>
+									<p>4.2、Templates/list.dwt：&nbsp;&nbsp;列表页模板</p>
+									<p>4.3、Templates/content.dwt：&nbsp;&nbsp;详情页模板</p>
+									<p style="border-bottom: 1px solid rgba(110,106,106,0.60)">4.ps、list.dwt和content.dwt是public的嵌套模板</p>
+									<p><i>5.0、css文件夹：&nbsp;&nbsp;样式文件目录</i></p>
+									<p>5.1、css/public.css：&nbsp;&nbsp;公共(上中下布局)、以及其他部分样式</p>
+									<p>5.2、css/index.css：&nbsp;&nbsp;首页样式</p>
+									<p>5.3、css/user.css：&nbsp;&nbsp;登陆、注册样式</p>
+									<p>5.4、css/list.css：&nbsp;&nbsp;列表页样式</p>
+									<p>5.5、css/liuyan.css：&nbsp;&nbsp;留言板样式</p>
+									<p>5.6、css/author.css：&nbsp;&nbsp;关于网站样式</p>
+									<p>5.7、css/admin.css：&nbsp;&nbsp;管理中心样式</p>
+									
+								</div>
+							</li>
+							
+							
+						</ul>
+					</div>
+				
+				</div>
+
+				<!-- InstanceEndEditable -->
+
+			</div>
+			<!--中段-右侧-->
+			<div id="right">
+				<a href="javascript:scroll(0,0);">
+					<div id="go_top"></div>
+				</a>
+			</div>
+			
+			<div class="null"></div>
+		</div>
+
+	</div>
+	
+	<!--底部-->
+	<div id="footer">
+		<div>Copyright 2020-<span id="year"></span>&nbsp;&nbsp;归17160405班李泳玉所有，未经许可不得复制、更改。<br /> E-mail：1009920020@QQ.COM&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="admin.html">管理中心</a>
+		</div>
+	</div>
+	
+	<!--移动端底部-->
+	<div id="footermune">
+		<ul>
+			<li><a href="index.html">
+				<img src="../images/footermune/btn01.png" alt="" />
+				<div>首页</div>
+				</a></li>
+			<li><a href="xxyd.html">
+				<img src="../images/footermune/btn02.png" alt="" />
+				<div>学习</div>
+				</a></li>
+			<li><a href="liuyan.html">
+				<img src="../images/footermune/btn03.png" alt="" />
+				<div>留言</div>
+				</a></li>
+			<li><a href="user.html">
+				<img src="../images/footermune/btn04.png" alt="" />
+				<div>我的</div>
+				</a></li>
+		</ul>
+	</div>
+</body>
+<!-- InstanceEnd --></html>

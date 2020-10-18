@@ -1,0 +1,70 @@
+/*管理中心*/
+.admin{
+	width: 98%;
+	margin: auto;
+	display: flex;
+}
+/*左侧*/
+.admin_l{
+	width: 30%;
+	background-color: rgba(68,165,201,0.40);
+}
+
+.admin_l ul{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.admin_l ul li{
+	list-style: none;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid rgba(100,97,97,0.40);
+}
+/*右侧*/
+.admin_r{
+	width: 70%;
+	background-color: rgba(190,188,103,0.40);
+}
+.admin_r ul div{
+	margin-left: 10px;
+	width: 30%;
+	height: 35px;
+	line-height: 35px;
+	text-indent: 1em;
+	border-radius: 5px;
+	background-color: rgba(44,95,189,0.60);
+}
+.admin_r ul div a{
+	font-size: 18px;
+	color: #FFFFFF;
+	display: block;
+}
+.admin_r ul div a:hover{
+	background-color: rgba(44,95,189,0.80);
+}
+.admin_r ul li{
+	list-style-position: inside;
+	list-style-type: decimal;
+	height: 30px;
+	line-height: 30px;
+	border-bottom: 1px solid rgba(100,97,97,0.40);
+}
+.admin_r ul li span:nth-child(1){
+	
+}
+.admin_r ul li span:nth-child(2){
+	float: right;
+	margin-right: 10px;
+}
+
+@media screen and (min-width: 600px){
+	.admin_l{
+		width: 20%;
+	}
+	.admin_r{
+		width: 80%;
+	}
+}
+
+
+

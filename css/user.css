@@ -1,0 +1,207 @@
+/*登录页面*/
+#login{
+	margin: auto;
+	margin-top: 100px;
+	width: 50%;
+	height: 350px;
+	padding-left: 40px;
+	padding-right: 40px;
+	box-shadow: 0 0 50px #EFEFEF;
+	background-color: rgba(137,178,208,0.20);
+}
+#login_title{
+	height: 50px;
+	line-height: 60px;
+	border-bottom: 2px solid rgba(0,128,230,1.00);
+	font-size: 22px;
+	font-weight: bold;
+}
+/*注册内容*/
+#login_content{
+	margin-top: 20px;
+	font-size: 18px;
+}
+#login_content div{
+	line-height: 50px;
+	text-indent: 1em
+}
+#login_content div input{
+	height: 35px;
+	width: 90%;
+}
+/*验证码*/
+#login_content div:nth-child(3){
+	height: 50px;
+	line-height: 50px;
+	position: relative;
+}
+/*账号*/
+#login_content div:nth-child(1) input{
+	background-size: 38px;
+	background-repeat: no-repeat;
+	border: 1px solid rgba(81,80,80,0.20);
+	text-indent: 3.5em;
+	background-image: url("../images/user.png");
+}
+/*密码*/
+#login_content div:nth-child(2) input{
+	background-size: 38px;
+	background-repeat: no-repeat;
+	border: 1px solid rgba(81,80,80,0.20);
+	text-indent: 3.5em;
+	background-image: url("../images/pwd.png");
+}
+/*验证码*/
+#login_content div:nth-child(3) input{
+	background-size: 38px;
+	background-repeat: no-repeat;
+	border: 1px solid rgba(81,80,80,0.20);
+	text-indent: 3.5em;
+	background-image: url("../images/yz.png");
+	width: 50%;
+}
+/*验证码图片*/
+#login_content div:nth-child(3) img{
+	width: 35%;
+	position: absolute;
+	right: 7%;
+	top: 10px;
+}
+/*登陆按钮*/
+#login_content div:nth-child(4){
+	margin-top: 10px;
+	text-indent: 1em;
+}
+#login_content div:nth-child(4) input{
+	font-size: 15px;
+	background-color: rgba(31,112,201,0.80);
+	color: #FFFFFF;
+	border: none;
+}
+#login_content div:nth-child(4) input:hover{
+	height: 38px;
+	background-color: rgba(31,112,201,1.00);
+}
+/*form之外*/
+.login_ts{
+	float: right;
+	margin-top: 10px;
+	margin-right: 8%;
+	font-size: 13px;
+}
+
+
+/*注册页面*/
+#reg{
+	margin: auto;
+	margin-top: 100px;
+	width: 50%;
+	height: 600px;
+	padding-left: 40px;
+	padding-right: 40px;
+	box-shadow: 0 0 50px #EFEFEF;
+	background-color: rgba(137,178,208,0.20);
+}
+#reg_title{
+	height: 50px;
+	line-height: 60px;
+	border-bottom: 2px solid rgba(0,128,230,1.00);
+	font-size: 22px;
+	font-weight: bold;
+}
+#reg_content{
+	margin-top: 20px;
+	font-size: 18px;
+}
+#reg_content div{
+	line-height: 50px;
+	text-indent: 1em
+}
+#reg_content div input{
+	height: 35px;
+	width: 90%;
+}
+#reg_content div:nth-child(5){
+	height: 50px;
+	line-height: 50px;
+	position: relative;
+}
+#reg_content div:nth-child(1) input{
+	background-size: 38px;
+	background-repeat: no-repeat;
+	border: 1px solid rgba(81,80,80,0.20);
+	text-indent: 3.5em;
+	background-image: url("../images/user.png");
+}
+#reg_content div:nth-child(2) input, #reg_content div:nth-child(3) input{
+	background-size: 38px;
+	background-repeat: no-repeat;
+	border: 1px solid rgba(81,80,80,0.20);
+	text-indent: 3.5em;
+	background-image: url("../images/pwd.png");
+}
+
+#reg_content div:nth-child(4) input, #reg_content div:nth-child(5) input{
+	background-size: 38px;
+	background-repeat: no-repeat;
+	border: 1px solid rgba(81,80,80,0.20);
+	text-indent: 3.5em;
+	background-image: url("../images/yz.png");
+}
+#reg_content div:nth-child(5) input{
+	width: 50%;
+}
+#reg_content div:nth-child(5) img{
+	width: 35%;
+	position: absolute;
+	right: 7%;
+	top: 10px;
+}
+#reg_content div:nth-child(5){
+	margin-top: 10px;
+	text-indent: 1em;
+}
+#reg_bt, #reg_re{
+	background-color: rgba(14,129,220,0.80);
+	color: #FFFFFF;
+	font-size: 15px;
+	border: none;
+}
+#reg_bt:hover, #reg_re:hover{
+	background-color: rgba(14,129,220,1.0);
+	height: 38px;
+}
+
+/*form之外*/
+.reg_ts{
+	float: right;
+	margin-top: 10px;
+	margin-right: 8%;
+	font-size: 13px;
+}
+#reg_title span:nth-child(1){
+	font-size: 22px;
+}
+#reg_title span:nth-child(2){
+	font-size: 14px;
+	font-weight: normal;
+	float: right;
+}
+#reg_content label{
+	margin-left: 6%;
+	font-size: 15px;
+	height: 40px;
+	line-height: 40px;
+}
+#reg_content label select{
+	line-height: 25px;
+	height: 25px;
+}
+
+@media screen and (max-width: 768px) and (min-width: 0px){
+	#reg, #login{
+		width: 99%;
+	}
+}
+
+
